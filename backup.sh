@@ -1,3 +1,3 @@
-cp ~/.vimrc ./
+cp ~/.vimrc ./vimrc
 cp ~/.tmux.conf ./
 
