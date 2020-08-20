@@ -41,6 +41,8 @@ noremap <leader>8 8gt
 noremap <leader>9 9gt
 noremap <leader>0 :tablast<cr>
 
+map <leader>t<leader> :tabnext
+
 set fileformat=unix
 
 " Shortcut setting (remapping)
@@ -84,7 +86,9 @@ nmap ˙ 4<C-y>
 
 " Vim-Plugs
 call plug#begin('~/.vim/plugged')
+" for html, css, js
 Plug 'mattn/emmet-vim'
+
 Plug 'scrooloose/nerdtree'
 Plug 'posva/vim-vue'
 Plug 'morhetz/gruvbox'
@@ -95,6 +99,17 @@ Plug 'kien/ctrlp.vim'
 " Plug 'scrooloose/syntastic'
 Plug 'mtscout6/syntastic-local-eslint.vim'
 Plug 'lervag/vimtex'
+
+" for react.js, typescript, javascript
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'maxmellon/vim-jsx-pretty'
+
+Plug 'dart-lang/dart-vim-plugin'
+
+" comment tool:
+Plug 'tomtom/tcomment_vim'
+
 call plug#end()
 
 " vim-vue config
@@ -140,3 +155,9 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 
 let g:tex_flavor = 'latex'
+
+if has("termguicolors")     " set true colors
+  set t_8f=\[[38;2;%lu;%lu;%lum
+  set t_8b=\[[48;2;%lu;%lu;%lum
+  set termguicolors
+endif
