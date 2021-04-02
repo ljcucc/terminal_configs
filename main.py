@@ -46,4 +46,5 @@ def main_menu():
             return
         terminal.clearScreen() 
 
-init()
+if __name__ == "__main__":
+    init()
