@@ -1,9 +1,10 @@
 import os
 
 import installation
+import terminal
 
 def init():
-    clearScreen()
+    terminal.clearScreen()
     print("Welcome to use restore and backup tool.")
     main_menu()
 
@@ -11,9 +12,6 @@ def init():
 
 def command_not_found():
     print("error command, please try again")
-
-def clearScreen():
-    os.system("clear")
 
 def restore():
     os.system("sh ./init.sh")
@@ -46,6 +44,6 @@ def main_menu():
         display()
         if prompt():
             return
-        clearScreen() 
+        terminal.clearScreen() 
 
 init()
