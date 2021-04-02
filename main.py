@@ -1,5 +1,7 @@
 import os
 
+import installation
+
 def init():
     clearScreen()
     print("Welcome to use restore and backup tool.")
@@ -9,51 +11,6 @@ def init():
 
 def command_not_found():
     print("error command, please try again")
-
-def installation():
-    print("### Installation ###")
-
-    packages = {
-            "z":"zsh",
-            "oz":"oh-my-zsh",
-            "mzd":"make zsh as default",
-            "t":"tmux",
-            "g":"git",
-            "q":"quit"
-
-    }
-
-    debain_pkgs = {
-            "zsh":"sudo apt-get install zsh",
-            "tmux":"sudo apt-get install tmux",
-            "git":"sudo apt-get install git",
-            "oh-my-zsh":'sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"',
-            "make zsh as default":"sudo vi /etc/passwd;chsh -s $(which zsh)",
-            "quit": ""
-    }
-
-    def display():
-        for key in packages:
-            item = packages[key]
-            print(key + " ) " + item)
-
-    def prompt():
-        ans = input("install> ")
-        if(ans == "q"):
-            return True
-        
-        os.system(debain_pkgs[packages[ans]])
-
-        input("---enter to continue---")
-
-    while True:
-        clearScreen()
-
-        print("### Installation ###")
-        display()
-
-        if prompt():
-            return
 
 def clearScreen():
     os.system("clear")
@@ -78,7 +35,7 @@ def main_menu():
         elif ans == "b":
             backup()
         elif ans == "i":
-            installation()
+            installation.run()
         elif ans == "q":
             return True
         else:
