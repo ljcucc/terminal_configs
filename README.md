@@ -3,7 +3,17 @@ Termianl Configs is an repository of my config files.
 
 ## Get Started
 
-Run `main.py` script with python3, then command prompt will popup:
+Clone this repo: 
+```bash
+git clone https://github.com/ljcucc/terminal_configs.git
+```
+
+Run `main.py` script with python3
+```bash
+python3 main.py
+```
+
+then command prompt will popup:
 
 ```
 ### main menu ###
