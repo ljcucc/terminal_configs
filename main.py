@@ -67,6 +67,7 @@ def main_menu():
         print("i ) install options")
         print("r ) install basic package and setup configs")
         print("b ) backup your config files")
+    
     def prompt():
         ans = input("h for help > ")
         
