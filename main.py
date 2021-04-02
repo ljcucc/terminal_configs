@@ -84,7 +84,6 @@ def main_menu():
             command_not_found()
 
     while True:
-        clearScreen()
         print("### main menu ###")
         display()
         if prompt():
