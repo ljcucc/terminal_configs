@@ -11,3 +11,5 @@ echo "Done!"
 echo "Installing tmux-plugin"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 echo "Done!"
+
+read -p "Press enter to continue"
