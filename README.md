@@ -18,6 +18,7 @@ Clone this repo:
 git clone https://github.com/ljcucc/terminal_configs.git
 ```
 
+### Run
 Run `main.py` script with python3 in termial_configs folder
 ```bash
 python3 ./src/main.py
