@@ -1,6 +1,7 @@
 import os
 
 import installation
+import setup
 import terminal
 
 def init():

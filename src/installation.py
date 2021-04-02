@@ -46,3 +46,6 @@ def run():
 
         if prompt():
             return
+
+if __name__ == "__main__":
+    run()
