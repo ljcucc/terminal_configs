@@ -18,9 +18,14 @@ Clone this repo:
 git clone https://github.com/ljcucc/terminal_configs.git
 ```
 
-Run `main.py` script with python3
+Run `main.py` script with python3 in termial_configs folder
 ```bash
-python3 main.py
+python3 ./src/main.py
+```
+
+or using make comamnd to run it:
+```bash
+make run
 ```
 
 then command prompt will popup:
@@ -34,6 +39,7 @@ h for help > _
 ```
 
 * type `i` for install tmux, ohmyzsh, zsh, or more...
+  * or using `make install` to open 
 * type `r` for install special vimrc, vim-plug, tpm (tmux package manager)
 
 ## Compatibility
