@@ -14,7 +14,7 @@ def command_not_found():
     print("error command, please try again")
 
 def restore():
-    os.system("sh ./init.sh")
+    os.system("sh ./scripts/init.sh")
 
 def main_menu():
 
