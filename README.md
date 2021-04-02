@@ -3,6 +3,16 @@ Termianl Configs is an repository of my config files.
 
 ## Get Started
 
+### Requirements
+
+Package below must pre-installed, which are in-built on macOS, Ubuntu, Chromebook(crostini)
+
+* python3
+* curl
+* vim
+
+### Setup
+
 Clone this repo: 
 ```bash
 git clone https://github.com/ljcucc/terminal_configs.git
