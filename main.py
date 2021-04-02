@@ -27,11 +27,13 @@ def main_menu():
         ans = input("h for help > ")
         
         if(ans == "h"):
-            help_menu()
+            # help_menu()
+            command_not_found()
         elif ans == "r":
             restore()
         elif ans == "b":
-            backup()
+            # backup()
+            command_not_found()
         elif ans == "i":
             installation.run()
         elif ans == "q":
