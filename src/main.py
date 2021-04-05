@@ -3,6 +3,7 @@ import os
 import installation
 import setup
 import terminal
+import GUI.main as gui
 
 def init():
     terminal.clearScreen()
@@ -23,6 +24,7 @@ def main_menu():
         print("i ) install options")
         print("r ) install basic package and setup configs")
         print("b ) backup your config files")
+        print("g ) open in GUI Window")
     
     def prompt():
         ans = input("h for help > ")
@@ -38,6 +40,9 @@ def main_menu():
         elif ans == "i":
             installation.run()
         elif ans == "q":
+            return True
+        elif ans == "g":
+            gui.run()
             return True
         else:
             command_not_found()
