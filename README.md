@@ -13,9 +13,9 @@ Package below must pre-installed, which are in-built on macOS, Ubuntu, Chromeboo
 
 ### Setup
 
-Clone this repo: 
+run in one-line commnad:
 ```bash
-git clone https://github.com/ljcucc/terminal_configs.git
+git clone https://github.com/ljcucc/terminal_configs.git ; cd terminal_configs ; sh run.sh
 ```
 
 ### Run
