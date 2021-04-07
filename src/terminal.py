@@ -8,6 +8,7 @@ def checkOS():
     print(os.name)
     print(platform.system())
     print(platform.release())
+    print(platform.machine())
     
     release = platform.release()
 
