@@ -30,4 +30,6 @@ def run():
     app.mainloop()
 
 if __name__ == "__main__":
-    print("please run from `make run`")
+    print("please run from `make run` or testing will continue...")
+
+    print("no test are running, exiting...")
