@@ -1,7 +1,7 @@
 import os
 
 import installation
-import setup
+import setup_env
 import terminal
 import GUI.main as gui
 
