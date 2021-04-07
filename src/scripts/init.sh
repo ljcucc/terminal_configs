@@ -1,7 +1,4 @@
-echo "Config your computer..."
-cp ./vimrc/.vimrc ~/
-cp ./.tmux.conf ~/
-echo "Done!"
+sh run_vimrc_setup.sh
 
 echo "Installing vim-plug..."
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
